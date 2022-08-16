@@ -1,0 +1,555 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Proxima Nova Regular";
+  max-width: 1600px;
+}
+
+.button {
+  color: $white;
+  background-color: $darkorange;
+  width: 174px;
+  height: 53px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $white;
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.header {
+  top: 0;
+  height: 810px;
+  background-image: url(./img/bg.png);
+  color: $white;
+
+  #header__logo {
+    margin-top: 32px;
+    width: 78px;
+    height: 100px;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15% 129px 15%;
+
+    .header-nav__menu {
+      display: inline-block;
+      > a {
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        margin-right: 28px;
+        cursor: pointer;
+        color: $white;
+        &:hover {
+          border-color: $darkorange;
+        }
+        &:active {
+          border-color: $darkorange;
+        }
+      }
+    }
+  }
+  .header-content {
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .header-content-text {
+      max-width: 548px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 224px;
+
+      h1 {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 55px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-family: "Proxima Nova Light";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 48px;
+      }
+    }
+    .header-content-img {
+      margin-right: 298px;
+    }
+
+    .header-content-toggle {
+      display: flex;
+      flex-direction: column;
+
+      > span {
+        margin-bottom: 12px;
+      }
+      .polygon {
+        display: block;
+        background: url(./img/polygon.png);
+        width: 19px;
+        height: 22px;
+        cursor: pointer;
+
+        &:hover {
+          background: url(./img/polygon-active.png);
+        }
+      }
+    }
+  }
+}
+.header-find {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 7% 0 50px 5%;
+  > h5 {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 19px;
+  }
+  .find__button {
+    width: 62px;
+    height: 71px;
+  }
+}
+
+.statistics {
+  margin: 133px 0 181px 0;
+  color: $blue;
+  h2 {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  p {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  .statistics-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .statistics-text__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 100px;
+    }
+  }
+}
+
+.affairs-wrapper {
+  background: #f8f8f8;
+}
+.affairs {
+  padding: 145px 10% 120px 10%;
+  margin-bottom: 110px;
+
+  .affairs-title {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: flex-end;
+    margin-bottom: 62px;
+
+    #title-union {
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-family: "Proxima Nova";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 72px;
+      color: $blue;
+    }
+  }
+
+  h5 {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $blue;
+    margin: 28px 0 8px 0;
+  }
+
+  p {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: $gray;
+  }
+  .affairs-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+    .affairs-box__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .affairs-box__item-text {
+        align-items: start;
+      }
+    }
+  }
+}
+
+.spotlight {
+  margin: 0 10% 10% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  h3 {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: $blue;
+  }
+
+  p {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: $gray;
+    margin: 15px 0 38px 0;
+  }
+
+  .spotlight-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #spotlight__button {
+    width: 171px;
+    height: 44px;
+    &:hover {
+      border: 2px solid $gray;
+      opacity: 0.9;
+    }
+  }
+
+  video {
+    width: 724px;
+    height: 444px;
+  }
+}
+
+.contact {
+  background-color: $black;
+  color: $white;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 97px;
+
+  .contact-bg {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 150px;
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    opacity: 1;
+    filter: blur(130px);
+    border-radius: 373.431px;
+    transform: rotate(-122.79deg);
+  }
+
+  h2 {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55px;
+    margin-top: 128px;
+  }
+  h3 {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 0px;
+    margin-bottom: 55px;
+  }
+  label {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1px;
+    margin-bottom: 8px;
+  }
+
+  input {
+    background: $white;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    text-align: start;
+    padding-left: 5px;
+    width: 294px;
+    height: 40px;
+
+    &:invalid {
+      border: 2px solid red;
+    }
+  }
+
+  #address,
+  #message {
+    width: 608px;
+  }
+  #message {
+    padding-top: 11px;
+    padding-bottom: 85px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 120px;
+    .contact-form-name {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 55px;
+      .contact-form-name__first {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-form-name__last {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+      }
+    }
+    .contact-form__address {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 55px;
+    }
+    .contact-form__message {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+    .contact-form-bg {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      right: 190px;
+      width: 300px;
+      height: 150px;
+      background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+      opacity: 1;
+      filter: blur(150px);
+      border-radius: 236.048px;
+      transform: rotate(5.78deg);
+    }
+  }
+}
+
+.return {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  .up__button {
+    width: 62px;
+    height: 72px;
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+    }
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  max-height: 400px;
+  background-color: $bgray;
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;
+    padding: 56px 0 49px 0;
+    .footer-content-telegram {
+      width: 299px;
+      height: 295px;
+      background-color: $white;
+
+      .footer-content-telegram__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $stateblue;
+        color: $white;
+        h2 {
+          font-family: "Proxima Nova";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 18px;
+        }
+
+        h3 {
+          font-family: "Proxima Nova";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        .footer-content-telegram__title-img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          background-color: $bluepurple;
+          padding: 11px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .footer-content-telegram__title-text {
+          display: flex;
+          flex-direction: column;
+          margin-left: 16px;
+        }
+      }
+
+      .footer-content-telegram__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 20px;
+        padding-left: 31px;
+        p {
+          font-family: "Proxima Nova";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+        }
+        a {
+          font-family: "Proxima Nova";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+        }
+        h5 {
+          font-family: "Proxima Nova";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 18px;
+        }
+        .footer-content-telegram__text-item {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+      }
+    }
+    .footer-content-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  
+}
+.footer-reserved {
+  display: flex;
+  justify-content: center;
+  background-color: $bblack;
+  p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 20px;
+
+    text-transform: uppercase;
+    color: $white;
+  }
+  img {
+    width: 9px;
+    height: 10px;
+  }
+}
