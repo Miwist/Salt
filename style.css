@@ -15,6 +15,28 @@
   src: url("./fonts/Raleway-Medium.woff") format("woff"), url("./fonts/Raleway-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Proxima Nova Regular", "Proxima Nova Light", "Raleway"; }
+  body img {
+    max-width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700; }
+
+p {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 600; }
+
 .menu {
   display: none; }
 
@@ -114,14 +136,6 @@
   margin: 0;
   box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth; }
-
-body {
-  font-family: "Proxima Nova Regular", "Proxima Nova Light", "Raleway"; }
-  body img {
-    max-width: 100%; }
-
 .button {
   color: white;
   background-color: #ff8b00;
@@ -174,16 +188,10 @@ body {
       flex-direction: column;
       align-items: flex-start; }
       .header .header-content .header-content-text h1 {
-        font-family: "Proxima Nova";
-        font-style: normal;
-        font-weight: 700;
         font-size: 55px;
         line-height: 55px;
         margin-bottom: 12px; }
       .header .header-content .header-content-text p {
-        font-family: "Proxima Nova Light";
-        font-style: normal;
-        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 48px; }
@@ -207,9 +215,6 @@ body {
   justify-content: center;
   align-items: center; }
   .header-find > h5 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 19px; }
@@ -225,19 +230,12 @@ body {
   color: #7050E5;
   height: 382px; }
   .statistics h2 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 60px;
     line-height: 68px; }
   .statistics p {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    letter-spacing: -0.02em;
     text-transform: uppercase; }
   .statistics .statistics-text {
     display: flex;
@@ -265,24 +263,16 @@ body {
     .affairs .affairs-title #title-union {
       margin-bottom: 50px; }
     .affairs .affairs-title h2 {
-      font-family: "Proxima Nova";
-      font-style: normal;
-      font-weight: 700;
       font-size: 60px;
       line-height: 72px;
       color: #7050E5; }
   .affairs h5 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
     color: #7050E5;
     margin: 28px 0 8px 0; }
   .affairs p {
-    font-family: "Proxima Nova";
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
@@ -309,15 +299,10 @@ body {
   justify-content: space-around;
   align-items: center; }
   .spotlight h3 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 40px;
     line-height: 55px;
     color: #7050E5; }
   .spotlight p {
-    font-family: "Proxima Nova";
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
@@ -343,7 +328,8 @@ body {
       opacity: 0.9; }
   .spotlight video {
     max-width: 100%;
-    max-height: 444px; }
+    max-height: 444px;
+    margin-left: 100px; }
 
 .contact {
   background-color: #232323;
@@ -364,16 +350,10 @@ body {
     border-radius: 373.431px;
     transform: rotate(-122.79deg); }
   .contact h2 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 55px;
     line-height: 55px;
     margin-top: 128px; }
   .contact h3 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 28px;
     line-height: 0px;
     margin-bottom: 55px; }
@@ -477,14 +457,10 @@ body {
         background-color: #6049cf;
         color: white; }
         .footer .footer-content .footer-content-telegram .footer-content-telegram__title h2 {
-          font-family: "Proxima Nova";
-          font-style: normal;
           font-weight: 600;
           font-size: 22px;
           line-height: 18px; }
         .footer .footer-content .footer-content-telegram .footer-content-telegram__title h3 {
-          font-family: "Proxima Nova";
-          font-style: normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 18px; }
@@ -516,8 +492,6 @@ body {
           font-size: 13px;
           line-height: 18px; }
         .footer .footer-content .footer-content-telegram .footer-content-telegram__text h5 {
-          font-family: "Proxima Nova";
-          font-style: normal;
           font-weight: 400;
           font-size: 11px;
           line-height: 18px; }
@@ -533,9 +507,6 @@ body {
   flex-direction: row;
   align-items: flex-start; }
   .footer-content-nav-box h3 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
@@ -560,8 +531,6 @@ body {
       .footer-content-nav-box .footer-content-nav__item > a:active {
         border-color: #ff8b00; }
     .footer-content-nav-box .footer-content-nav__item a {
-      font-family: "Proxima Nova";
-      font-style: normal;
       font-weight: 600;
       font-size: 14px;
       line-height: 20px;
@@ -645,6 +614,8 @@ body {
 
   .spotlight {
     flex-direction: column; }
+    .spotlight video {
+      margin-left: 0; }
     .spotlight .spotlight-text h3 {
       font-size: 24px;
       line-height: 32px; }
@@ -709,6 +680,8 @@ body {
 
   .spotlight {
     flex-direction: column; }
+    .spotlight video {
+      margin-left: 0; }
     .spotlight .spotlight-text h3 {
       font-size: 24px;
       line-height: 32px; }

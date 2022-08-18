@@ -27,6 +27,32 @@
   flex-direction: column;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Proxima Nova Regular", "Proxima Nova Light", "Raleway";
+  img {
+    max-width: 100%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 600;
+}
 .menu {
   display: none;
 }
@@ -136,17 +162,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Proxima Nova Regular", "Proxima Nova Light", "Raleway";
-  img {
-    max-width: 100%;
-  }
-}
-
 .button {
   color: $white;
   background-color: $darkorange;
@@ -198,18 +213,12 @@ body {
       @include flexcolumn;
       align-items: flex-start;
       h1 {
-        font-family: "Proxima Nova";
-        font-style: normal;
-        font-weight: 700;
         font-size: 55px;
         line-height: 55px;
         margin-bottom: 12px;
       }
 
       p {
-        font-family: "Proxima Nova Light";
-        font-style: normal;
-        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 48px;
@@ -242,9 +251,6 @@ body {
   align-items: center;
 
   > h5 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 19px;
@@ -262,21 +268,14 @@ body {
   color: $blue;
   height: 382px;
   h2 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 60px;
     line-height: 68px;
   }
 
   p {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    letter-spacing: -0.02em;
     text-transform: uppercase;
   }
 
@@ -311,9 +310,6 @@ body {
       margin-bottom: 50px;
     }
     h2 {
-      font-family: "Proxima Nova";
-      font-style: normal;
-      font-weight: 700;
       font-size: 60px;
       line-height: 72px;
       color: $blue;
@@ -321,9 +317,6 @@ body {
   }
 
   h5 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
@@ -332,8 +325,6 @@ body {
   }
 
   p {
-    font-family: "Proxima Nova";
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
@@ -369,17 +360,12 @@ body {
   align-items: center;
 
   h3 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 40px;
     line-height: 55px;
     color: $blue;
   }
 
   p {
-    font-family: "Proxima Nova";
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
@@ -415,6 +401,7 @@ body {
   video {
     max-width: 100%;
     max-height: 444px;
+    margin-left: 100px;
   }
 }
 
@@ -439,17 +426,11 @@ body {
   }
 
   h2 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 55px;
     line-height: 55px;
     margin-top: 128px;
   }
   h3 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 28px;
     line-height: 0px;
     margin-bottom: 55px;
@@ -572,16 +553,12 @@ body {
         background-color: $stateblue;
         color: $white;
         h2 {
-          font-family: "Proxima Nova";
-          font-style: normal;
           font-weight: 600;
           font-size: 22px;
           line-height: 18px;
         }
 
         h3 {
-          font-family: "Proxima Nova";
-          font-style: normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 18px;
@@ -620,8 +597,6 @@ body {
         }
 
         h5 {
-          font-family: "Proxima Nova";
-          font-style: normal;
           font-weight: 400;
           font-size: 11px;
           line-height: 18px;
@@ -642,9 +617,6 @@ body {
   align-items: flex-start;
 
   h3 {
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
@@ -661,8 +633,6 @@ body {
     @include flexcolumn;
     @include link;
     a {
-      font-family: "Proxima Nova";
-      font-style: normal;
       font-weight: 600;
       font-size: 14px;
       line-height: 20px;
@@ -780,6 +750,9 @@ body {
   }
   .spotlight {
     flex-direction: column;
+    video {
+      margin-left: 0;
+    }
     .spotlight-text {
       h3 {
         font-size: 24px;
@@ -876,6 +849,9 @@ body {
 
   .spotlight {
     flex-direction: column;
+    video {
+      margin-left: 0;
+    }
     .spotlight-text {
       h3 {
         font-size: 24px;
