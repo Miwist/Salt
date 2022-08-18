@@ -16,10 +16,23 @@
         <div class="header-nav__menu">
           <a href="#">HOME</a>
           <a href="#products">PRODUCTS</a>
-          <a href="#services">SERVIES</a>
+          <a href="#services">SERVIСES</a>
           <a href="#resources">RESOURCES</a>
           <a href="#about">ABOUT</a>
           <a href="#contactus">CONTACT US</a>
+        </div>
+        <div class="menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">PRODUCTS</a></li>
+            <li><a class="menu__item" href="#">SERVIСES</a></li>
+            <li><a class="menu__item" href="#">RESOURCES</a></li>
+            <li><a class="menu__item" href="#">ABOUT</a></li>
+            <li><a class="menu__item" href="#">CONTACT US</a></li>
+          </ul>
         </div>
       </nav>
       <div class="header-content">
@@ -37,9 +50,9 @@
           <img src="./img/white-bird.png" alt="bird" />
         </div>
         <div class="header-content-toggle">
-          <span class="polygon"></span>
-          <span class="polygon"></span>
-          <span class="polygon"></span>
+          <span class="polygon-active" ></span>
+          <span class="polygon polygon-active"></span>
+          <span class="polygon polygon-active"></span>
         </div>
       </div>
       <div class="header-find">
@@ -181,6 +194,9 @@
             <video controls poster="./img/video-poster.png">
               <source src="./video/msign.mp4" type="video/mp4" />
             </video>
+            <button type="button" class="button" id="spotlight__button--mobil">
+              MORE INFO
+            </button>
           </div>
         </div>
       </section>
@@ -307,7 +323,7 @@
                 <a href="#">Environment Policy </a>
                 <a href="#">Privacy </a>
               </div>
-              <div class="footer-content-nav__item ">
+              <div class="footer-content-nav__item">
                 <div class="footer-content-nav__item-title">
                   <img src="./img/Polygon-active.png" alt="polygon" />
                   <h3>contact sales</h3>
@@ -318,10 +334,9 @@
                 </a>
               </div>
               <div class="footer-content-img">
-                <img src="./img/smart.png" alt="smart">
+                <img src="./img/smart.png" alt="smart" />
               </div>
             </div>
-           
           </div>
         </div>
         <div class="footer-reserved">
