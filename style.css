@@ -239,7 +239,8 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin-left: 100px; }
 
 .affairs-wrapper {
   background: #f8f8f8; }
