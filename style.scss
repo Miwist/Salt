@@ -65,7 +65,7 @@ p {
   display: none;
   align-items: center;
   position: fixed;
-  top: 20px;
+  top: 40px;
   right: 20px;
   width: 26px;
   height: 26px;
@@ -784,11 +784,23 @@ p {
 @media screen and (max-width: 520px) {
   .header {
     .header-nav {
+      justify-content: flex-start;
+      .header-nav__menu {
+        display: none;
+      }
       #header__logo {
         width: 39px;
         height: 50px;
       }
     }
+    .menu {
+      display: block;
+    }
+
+    .menu__btn {
+      display: flex;
+    }
+
     .header-content {
       flex-direction: column-reverse;
       align-items: center;
