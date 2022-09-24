@@ -47,7 +47,7 @@ p {
 .menu__btn {
   display: none;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 40px;
   right: 20px;
   width: 26px;
